@@ -6,43 +6,43 @@ import { cn } from "@/lib/utils";
 const services = [
   {
     icon: Stethoscope,
-    title: "Primary Care",
-    description: "Comprehensive health assessments, preventive care, and treatment for common illnesses.",
+    title: "Surgical Treatment for Knee",
+    description: "From traditional to minimally invasive & robotic-assisted, Divi specializes in all types of advanced knee surgeries tailored to your needs.",
     color: "text-primary",
     bgColor: "bg-primary/10",
   },
   {
     icon: Heart,
-    title: "Cardiology",
-    description: "Expert heart care including diagnostics, treatment, and ongoing cardiovascular health management.",
+    title: "Non-Surgical Treatment for Knee",
+    description: "Targeted, non-invasive treatments designed to relieve knee pain and restore mobility.",
     color: "text-red-500",
     bgColor: "bg-red-500/10",
   },
   {
     icon: Brain,
-    title: "Mental Health",
-    description: "Compassionate mental health services including counseling, therapy, and psychiatric care.",
+    title: "Surgical Treatment for Hip",
+    description: "Cutting-edge hip surgeries, including total hip replacement, to enhance joint function and promote long-term hip health.",
     color: "text-violet-500",
     bgColor: "bg-violet-500/10",
   },
   {
     icon: Baby,
-    title: "Pediatrics",
-    description: "Specialized care for infants, children, and adolescents from newborn through age 18.",
+    title: "Non-Surgical Treatment for Hip",
+    description: "Personalized, non-surgical solutions to manage hip pain for better movement and improved quality of life.",
     color: "text-pink-500",
     bgColor: "bg-pink-500/10",
   },
   {
     icon: Bone,
-    title: "Orthopedics",
-    description: "Treatment for bone, joint, and muscle conditions with advanced surgical and non-surgical options.",
+    title: "Surgical Treatment for Bone Trauma",
+    description: "Precise trauma surgical treatments that quickly restore bone function, help you move pain-free, and ensure fast recovery.",
     color: "text-amber-500",
     bgColor: "bg-amber-500/10",
   },
   {
     icon: Pill,
-    title: "Pharmacy",
-    description: "On-site pharmacy services for convenient prescription fulfillment and medication counseling.",
+    title: "Non-Surgical Treatment for Bone Trauma",
+    description: "Customized, non-invasive care to heal bone trauma and speed up rehabilitation without the need for surgery.",
     color: "text-emerald-500",
     bgColor: "bg-emerald-500/10",
   },
@@ -56,11 +56,8 @@ export function ServicesSection() {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <p className="text-primary font-semibold mb-2">Our Services</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Comprehensive Healthcare Services
+            Your journey towards pain-free & active life starts at Divi
           </h2>
-          <p className="text-muted-foreground text-lg">
-            We offer a wide range of medical services to meet all your healthcare needs under one roof.
-          </p>
         </div>
 
         {/* Services Grid */}

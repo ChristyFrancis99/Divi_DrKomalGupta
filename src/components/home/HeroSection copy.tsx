@@ -1,16 +1,20 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/dr_komal_2.png";
+import heroImage from "@/assets/dr_komal.png";
 
 export function HeroSection() {
   return (
     <section className="relative min-h-screen overflow-hidden  from-primary via-primary to-teal-600 flex items-center justify-center">
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-primary-foreground rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary-foreground rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2" />
+      </div>
+
       {/* Doctor Name – True Center */}
       <h1
-        className="absolute left-0 right-0 top-16 tracking-normal md:tracking-wide lg:tracking-wider text-6xl md:text-7xl lg:text-8xl font-bold text-teal-600 text-center z-30 animate-fade-up opacity-0"
+        className="absolute left-0 right-0 top-16 tracking-normal md:tracking-wide lg:tracking-wider text-6xl md:text-7xl lg:text-8xl font-bold tracking-wide text-neutral-900 text-center z-30 animate-fade-up opacity-0"
         style={{
           fontFamily: "Nunito, sans-serif",
-          WebkitTextStroke: "1px white",
         }}
       >
         Dr. Komal Gupta
@@ -35,15 +39,14 @@ export function HeroSection() {
       <div className="relative z-10 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center min-h-screen pt-40 gap-10">
           {/* LEFT CONTENT */}
-          <div className="space-y-6 text-center lg:text-left text-black">
-            <h3 className="text-2xl font-bold text-black">
+          <div className="space-y-6 text-center lg:text-left text-white">
+
+            <h3 className="text-2xl font-bold">
               Experienced orthopedic physiotherapist
             </h3>
 
-            <p className="text-lg text-black max-w-md">
-              With over 7 years of experience, Dr. Komal R. Gupta is a trusted
-              orthopedic physiotherapist dedicated to helping patients regain
-              mobility and improve their quality of life.
+            <p className="text-lg text-white/80 max-w-md"> 
+            With over 7 years of experience, Dr. Komal R. Gupta is a trusted orthopedic physiotherapist dedicated to helping patients regain mobility and improve their quality of life.
             </p>
           </div>
 
@@ -51,16 +54,15 @@ export function HeroSection() {
           <div />
 
           {/* RIGHT CONTENT */}
-          <div className="space-y-6 text-center lg:text-right text-black">
-            <p className="text-black max-w-md ml-auto">
-              Take your first step towards pain-free life with advanced
-              orthopaedic care at Divi.
+          <div className="space-y-6 text-center lg:text-right text-white">
+            <p className="text-white/100 max-w-md ml-auto">
+              Take your first step towards pain-free life with advanced orthopaedic care at Divi.
             </p>
 
             <Button
               asChild
               size="lg"
-              className="rounded-full px-8 bg-[#1f847a] text-white hover:bg-[hsl(174,62%,32%)/90]"
+              className="rounded-full px-8 bg-white text-[hsl(174,62%,32%)] hover:bg-white/90"
             >
               <Link to="/contact">Book an appointment</Link>
             </Button>

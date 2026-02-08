@@ -4,8 +4,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from "lucide-react";
-import { useState } from "react";
 import { toast } from "sonner";
+import { useState } from "react";
+import type React from "react";
+
 
 const contactInfo = [
   {
@@ -187,6 +189,7 @@ const Contact = () => {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
+                    aria-label="Service Needed"
                     className="w-full h-10 px-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                   >
                     <option value="">Select a service</option>

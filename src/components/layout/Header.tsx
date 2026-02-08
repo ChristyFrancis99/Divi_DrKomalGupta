@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/divi_logo.png";
 import { cn } from "@/lib/utils";
 
 const navigation = [
@@ -18,14 +19,15 @@ export function Header() {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-md border-b border-border">
-      <nav className="container-custom flex items-center justify-between py-4">
+    <header className="sticky top-0 z-50 bg-teal-600 text-white rounded-3xl mx-4 mt-4">
+      <nav className="container-custom flex items-center justify-between py-2 px-6">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg">H+</span>
-          </div>
-          <span className="text-xl font-bold text-foreground">HealthCare</span>
+          <img
+            src={logo}
+            alt="Devi Logo"
+            className="w-16 sm:w-20 md:w-24 h-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -35,10 +37,10 @@ export function Header() {
               key={item.name}
               to={item.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-sm font-medium transition-colors hover:text-teal-200",
                 location.pathname === item.href
-                  ? "text-primary"
-                  : "text-muted-foreground"
+                  ? "text-white"
+                  : "text-teal-100",
               )}
             >
               {item.name}
@@ -48,11 +50,14 @@ export function Header() {
 
         {/* CTA Buttons */}
         <div className="hidden lg:flex items-center gap-4">
-          <a href="tel:+1234567890" className="flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+          <a
+            href="tel:+1234567890"
+            className="flex items-center gap-2 text-sm font-medium text-teal-100 hover:text-white transition-colors"
+          >
             <Phone className="w-4 h-4" />
             (123) 456-7890
           </a>
-          <Button asChild variant="accent">
+          <Button asChild variant="secondary">
             <Link to="/contact">Book Appointment</Link>
           </Button>
         </div>
@@ -64,16 +69,16 @@ export function Header() {
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (
-            <X className="w-6 h-6 text-foreground" />
+            <X className="w-6 h-6 text-white" />
           ) : (
-            <Menu className="w-6 h-6 text-foreground" />
+            <Menu className="w-6 h-6 text-white" />
           )}
         </button>
       </nav>
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-card border-b border-border animate-fade-in">
+        <div className="lg:hidden bg-teal-600 border-t border-teal-500 animate-fade-in">
           <div className="container-custom py-4 space-y-4">
             {navigation.map((item) => (
               <Link
@@ -83,14 +88,15 @@ export function Header() {
                 className={cn(
                   "block py-2 text-base font-medium transition-colors",
                   location.pathname === item.href
-                    ? "text-primary"
-                    : "text-muted-foreground hover:text-primary"
+                    ? "text-white"
+                    : "text-teal-100 hover:text-white",
                 )}
               >
                 {item.name}
               </Link>
             ))}
-            <Button asChild variant="accent" className="w-full mt-4">
+
+            <Button asChild variant="secondary" className="w-full mt-4">
               <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
                 Book Appointment
               </Link>
