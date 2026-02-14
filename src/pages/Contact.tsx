@@ -14,14 +14,12 @@ const contactInfo = [
     icon: Phone,
     title: "Phone",
     content: "+91 98701 89389",
-    subtext: "Mon-Sat 10am-12pm and 4pm-9pm Sun: Closed",
     href: "tel:+1234567890",
   },
   {
     icon: Mail,
     title: "Email",
     content: "info@healthcare.com",
-    subtext: "We reply within 24 hours",
     href: "mailto:info@healthcare.com",
   },
   {
@@ -29,7 +27,7 @@ const contactInfo = [
     title: "Address",
     content: "Shop A-1, Mathuradas Road, Anand Nagar, Bohra Colony, Dhanukarwadi",
     subtext: "Kandivali West, Mumbai, Maharashtra 400067",
-    href: "#",
+    href: "https://www.google.com/maps/dir//Dr.+Komal's+PHYSIOCARE+:+Back,+Neck,+Knee+%26+Shoulder+pain+%7C+Dry+Needle+%7C+Sports+Rehab+%7C+Physiotherapist+in+Kandivali+-+Malad,+Shop+A-1,+Mathuradas+Road,+Anand+Nagar,+Bohra+Colony,+Dhanukarwadi,+Kandivali+West,+Mumbai,+Maharashtra+400067/@19.1887665,72.8423049,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3be7b777f40523db:0x4544ddebd52b3fb8!2m2!1d72.8402324!2d19.2036332?entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D",
   },
   {
     icon: Clock,
