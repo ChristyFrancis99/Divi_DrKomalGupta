@@ -11,49 +11,9 @@ const stats = [
 ];
 
 const values = [
-  {
-    title: "Patient-Centered Care",
-    description: "We put our patients first, ensuring every decision is made with your best interests at heart.",
-  },
-  {
-    title: "Excellence in Medicine",
-    description: "Our team stays at the forefront of medical advances to provide you with the best possible care.",
-  },
-  {
-    title: "Compassion & Empathy",
-    description: "We treat every patient with kindness, understanding, and respect they deserve.",
-  },
-  {
-    title: "Integrity & Trust",
-    description: "We build lasting relationships based on honesty, transparency, and ethical practice.",
-  },
 ];
 
 const team = [
-  {
-    name: "Dr. Sarah Mitchell",
-    role: "Chief Medical Officer",
-    specialty: "Internal Medicine",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face",
-  },
-  {
-    name: "Dr. James Wong",
-    role: "Head of Pediatrics",
-    specialty: "Pediatric Care",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face",
-  },
-  {
-    name: "Dr. Emily Chen",
-    role: "Head of Cardiology",
-    specialty: "Cardiovascular Health",
-    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop&crop=face",
-  },
-  {
-    name: "Dr. Michael Rodriguez",
-    role: "Mental Health Director",
-    specialty: "Psychiatry",
-    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop&crop=face",
-  },
 ];
 
 const About = () => {
@@ -117,64 +77,6 @@ const About = () => {
                 className="rounded-2xl shadow-xl"
               />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values */}
-      <section className="section-padding bg-secondary/30">
-        <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <p className="text-primary font-semibold mb-2">Our Values</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              What We Stand For
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            {values.map((value) => (
-              <div key={value.title} className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <CheckCircle className="w-5 h-5 text-primary" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">{value.title}</h3>
-                  <p className="text-muted-foreground">{value.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <p className="text-primary font-semibold mb-2">Our Team</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Meet Our Medical Experts
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              Our board-certified physicians bring years of experience and expertise to provide you with exceptional care.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member) => (
-              <div key={member.name} className="text-center group">
-                <div className="relative mb-4 overflow-hidden rounded-2xl">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
-                <p className="text-primary font-medium">{member.role}</p>
-                <p className="text-muted-foreground text-sm">{member.specialty}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

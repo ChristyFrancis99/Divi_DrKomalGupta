@@ -80,7 +80,7 @@ const Services = () => {
               Comprehensive Healthcare Services
             </h1>
             <p className="text-xl text-primary-foreground/80">
-              At DR KOMAL'S PHYSIOCARE, we provide specialized Physiotherapy Across Orthopedics, Sports, Neuro & More.
+              At DR KOMAL'S Physiocare, we provide specialized Physiotherapy Across Orthopedics, Sports, Neuro & More.
             </p>
             <p className="text-xl text-primary-foreground/80">
               Comprehensive, evidence-based care designed for lasting recovery and better mobility.
@@ -109,12 +109,6 @@ const Services = () => {
                     <h2 className="text-2xl font-bold text-foreground">{service.title}</h2>
                   </div>
                   <p className="text-muted-foreground text-lg mb-6">{service.description}</p>
-                  <Button asChild>
-                    <Link to="/contact">
-                      Book Appointment
-                      <ArrowRight className="w-4 h-4" />
-                    </Link>
-                  </Button>
                 </div>
                 <div className="bg-secondary/50 rounded-xl p-6">
                   <h3 className="font-semibold text-foreground mb-4">What We Offer</h3>
@@ -141,7 +135,7 @@ const Services = () => {
               Your Path to Relief Starts with a Single Call
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Take the first step towards a pain-free life. Our experienced chiropractors are here to help you achieve optimal health
+              Take the first step towards a pain-free life. Our experienced Doctors are here to help you achieve optimal health
             </p>
             <Button asChild size="lg" variant="accent">
               <Link to="/contact">
