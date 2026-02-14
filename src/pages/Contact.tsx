@@ -13,8 +13,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    content: "(123) 456-7890",
-    subtext: "Mon-Fri 8am-6pm, Sat 9am-2pm",
+    content: "+91 98701 89389",
+    subtext: "Mon-Sat 10am-12pm and 4pm-9pm Sun: Closed",
     href: "tel:+1234567890",
   },
   {
@@ -27,15 +27,15 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    content: "123 Medical Center Drive",
-    subtext: "San Francisco, CA 94102",
+    content: "Shop A-1, Mathuradas Road, Anand Nagar, Bohra Colony, Dhanukarwadi",
+    subtext: "Kandivali West, Mumbai, Maharashtra 400067",
     href: "#",
   },
   {
     icon: Clock,
     title: "Hours",
-    content: "Mon-Fri: 8am-6pm",
-    subtext: "Sat: 9am-2pm, Sun: Closed",
+    content: "Morning: 10 AM-12 PM and Evening: 4 PM-9 PM ",
+    subtext: "Sunday: Closed",
     href: "#",
   },
 ];

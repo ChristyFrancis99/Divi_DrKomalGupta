@@ -10,11 +10,13 @@ const quickLinks = [
 ];
 
 const services = [
-  { name: "Primary Care", href: "/services" },
-  { name: "Preventive Health", href: "/services" },
-  { name: "Chronic Care", href: "/services" },
-  { name: "Mental Health", href: "/services" },
-  { name: "Pediatrics", href: "/services" },
+  { name: "Kinesiology Tapping", href: "/services" },
+  { name: "Dry Needling", href: "/services" },
+  { name: "Cupping", href: "/services" },
+  { name: "Manual Therapy", href: "/services" },
+  { name: "Chiropractics", href: "/services" },
+  { name: "Pediatric physiotherapy", href: "/services" },
+  { name: "Neuro physiotherapy", href: "/services" },
 ];
 
 export function Footer() {
@@ -90,14 +92,14 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-primary-foreground/70 text-sm">
-                  123 Medical Center Drive<br />
-                  San Francisco, CA 94102
+                  Shop A-1, Mathuradas Road, Anand Nagar, Bohra Colony, Dhanukarwadi,<br/>
+                  Kandivali West, Mumbai, Maharashtra 400067
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <a href="tel:+1234567890" className="text-primary-foreground/70 hover:text-primary-foreground text-sm">
-                  (123) 456-7890
+                    +91 98701 89389
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -109,8 +111,8 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-primary-foreground/70 text-sm">
-                  Mon - Fri: 8:00 AM - 6:00 PM<br />
-                  Sat: 9:00 AM - 2:00 PM
+                  Morning: 10 AM-12 PM and Evening: 4 PM-9 PM<br />
+                  Sunday: Closed
                 </span>
               </li>
             </ul>

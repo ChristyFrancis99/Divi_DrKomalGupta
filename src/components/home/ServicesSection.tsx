@@ -5,47 +5,55 @@ import { cn } from "@/lib/utils";
 
 const services = [
   {
-    icon: Stethoscope,
-    title: "Surgical Treatment for Knee",
-    description: "From traditional to minimally invasive & robotic-assisted, Divi specializes in all types of advanced knee surgeries tailored to your needs.",
-    color: "text-primary",
-    bgColor: "bg-primary/10",
-  },
-  {
-    icon: Heart,
-    title: "Non-Surgical Treatment for Knee",
-    description: "Targeted, non-invasive treatments designed to relieve knee pain and restore mobility.",
-    color: "text-red-500",
-    bgColor: "bg-red-500/10",
-  },
-  {
-    icon: Brain,
-    title: "Surgical Treatment for Hip",
-    description: "Cutting-edge hip surgeries, including total hip replacement, to enhance joint function and promote long-term hip health.",
-    color: "text-violet-500",
-    bgColor: "bg-violet-500/10",
-  },
-  {
-    icon: Baby,
-    title: "Non-Surgical Treatment for Hip",
-    description: "Personalized, non-surgical solutions to manage hip pain for better movement and improved quality of life.",
-    color: "text-pink-500",
-    bgColor: "bg-pink-500/10",
-  },
-  {
-    icon: Bone,
-    title: "Surgical Treatment for Bone Trauma",
-    description: "Precise trauma surgical treatments that quickly restore bone function, help you move pain-free, and ensure fast recovery.",
-    color: "text-amber-500",
-    bgColor: "bg-amber-500/10",
-  },
-  {
-    icon: Pill,
-    title: "Non-Surgical Treatment for Bone Trauma",
-    description: "Customized, non-invasive care to heal bone trauma and speed up rehabilitation without the need for surgery.",
-    color: "text-emerald-500",
-    bgColor: "bg-emerald-500/10",
-  },
+  icon: Stethoscope,
+  title: "Kinesiology Taping",
+  description: "Elastic therapeutic taping that supports muscles and joints while improving circulation and reducing pain without limiting movement.",
+  color: "text-primary",
+  bgColor: "bg-primary/10",
+},
+{
+  icon: Stethoscope,
+  title: "Dry Needling",
+  description: "A targeted technique using fine needles to release muscle knots, relieve pain, and restore optimal muscle function.",
+  color: "text-primary",
+  bgColor: "bg-primary/10",
+},
+{
+  icon: Stethoscope,
+  title: "Cupping Therapy",
+  description: "A suction-based therapy that enhances blood flow, reduces muscle tension, and accelerates natural healing.",
+  color: "text-primary",
+  bgColor: "bg-primary/10",
+},
+{
+  icon: Stethoscope,
+  title: "Manual Therapy",
+  description: "Hands-on treatment techniques designed to reduce pain, restore joint mobility, and improve overall movement.",
+  color: "text-primary",
+  bgColor: "bg-primary/10",
+},
+{
+  icon: Stethoscope,
+  title: "Chiropractic Care",
+  description: "Precise spinal adjustments that correct alignment, relieve nerve pressure, and improve musculoskeletal function.",
+  color: "text-primary",
+  bgColor: "bg-primary/10",
+},
+{
+  icon: Stethoscope,
+  title: "Neuro Physiotherapy",
+  description: "Specialized rehabilitation focused on improving movement, balance, and independence in neurological conditions.",
+  color: "text-primary",
+  bgColor: "bg-primary/10",
+},
+{
+  icon: Stethoscope,
+  title: "Pediatric Physiotherapy",
+  description: "Child-focused therapy that supports healthy development, strength, posture, and motor skill improvement.",
+  color: "text-primary",
+  bgColor: "bg-primary/10",
+},
+
 ];
 
 export function ServicesSection() {
@@ -56,7 +64,7 @@ export function ServicesSection() {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <p className="text-primary font-semibold mb-2">Our Services</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Your journey towards pain-free & active life starts at Divi
+            Your journey towards pain-free & active life starts with us
           </h2>
         </div>
 
