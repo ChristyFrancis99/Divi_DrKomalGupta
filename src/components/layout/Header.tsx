@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/divi_logo.png";
+import logo from "@/assets/komal_logo.png";
 import { cn } from "@/lib/utils";
 
 const navigation = [
@@ -55,7 +55,7 @@ export function Header() {
             className="flex items-center gap-2 text-sm font-medium text-teal-100 hover:text-white transition-colors"
           >
             <Phone className="w-4 h-4" />
-            (123) 456-7890
+            +91 9870189389
           </a>
           <Button asChild variant="secondary">
             <Link to="/contact">Book Appointment</Link>
