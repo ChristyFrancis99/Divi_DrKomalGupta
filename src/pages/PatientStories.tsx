@@ -73,7 +73,7 @@ const PatientStories = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary via-primary to-teal-600 text-primary-foreground section-padding">
+      <section className="bg-gradient-to-br from-primary via-primary to-olive-600 text-primary-foreground section-padding">
         <div className="container-custom">
           <div className="max-w-3xl">
             <p className="text-primary-foreground/80 font-medium mb-4">Patient Stories</p>

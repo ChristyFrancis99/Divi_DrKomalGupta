@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/dr_komal_2.png";
+import heroImage from "@/assets/dr_komal_1.png";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden  from-primary via-primary to-teal-600 flex items-center justify-center">
+    <section className="relative min-h-screen overflow-hidden flex items-center justify-center bg-white">
+      
       {/* Doctor Name – True Center */}
       <h1
-        className="absolute left-0 right-0 top-16 tracking-normal md:tracking-wide lg:tracking-wider text-6xl md:text-7xl lg:text-8xl font-bold text-teal-600 text-center z-30 animate-fade-up opacity-0"
+        className="absolute left-0 right-0 top-16 tracking-normal md:tracking-wide lg:tracking-wider text-6xl md:text-7xl lg:text-8xl font-bold text-[#77af58] text-center z-30 animate-fade-up opacity-0"
         style={{
           fontFamily: "Nunito, sans-serif",
           WebkitTextStroke: "1px white",
@@ -34,6 +35,7 @@ export function HeroSection() {
       {/* Content Layer */}
       <div className="relative z-10 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center min-h-screen pt-40 gap-10">
+          
           {/* LEFT CONTENT */}
           <div className="space-y-6 text-center lg:text-left text-black">
             <h3 className="text-2xl font-bold text-black">
@@ -60,7 +62,7 @@ export function HeroSection() {
             <Button
               asChild
               size="lg"
-              className="rounded-full px-8 bg-[#1f847a] text-white hover:bg-[hsl(174,62%,32%)/90]"
+              className="rounded-full px-8 bg-[#77af58] text-white hover:bg-[#6aa24d] transition"
             >
               <Link to="/contact">Book an appointment</Link>
             </Button>

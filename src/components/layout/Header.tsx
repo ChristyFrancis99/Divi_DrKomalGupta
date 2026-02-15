@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import logo from "@/assets/komal_logo.png";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/komal_logo_olive.png";
 import { cn } from "@/lib/utils";
 
 const navigation = [
@@ -10,7 +9,6 @@ const navigation = [
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
   { name: "Patient Stories", href: "/patient-stories" },
-  { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -19,91 +17,89 @@ export function Header() {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 bg-teal-600 text-white rounded-3xl mx-4 mt-4">
-      <nav className="container-custom flex items-center justify-between py-2 px-6">
-        {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <img
-            src={logo}
-            alt="Devi Logo"
-            className="w-16 sm:w-20 md:w-24 h-auto"
-          />
-        </Link>
+    <>
+      {/* Fixed Navbar */}
+      <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-7xl">
+        <div className="flex items-center justify-between">
 
-        {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-8">
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              to={item.href}
-              className={cn(
-                "text-sm font-medium transition-colors hover:text-teal-200",
-                location.pathname === item.href
-                  ? "text-white"
-                  : "text-teal-100",
-              )}
-            >
-              {item.name}
+          {/* LEFT - White Logo */}
+          {/* <div className="bg-white px-6 py-3 rounded-full shadow-md"> */}
+            <Link to="/">
+              <img
+                src={logo}
+                alt="Dr Komal Logo"
+                className="w-40 md:w-48 h-auto"
+              />
             </Link>
-          ))}
-        </div>
+          {/* </div> */}
 
-        {/* CTA Buttons */}
-        <div className="hidden lg:flex items-center gap-4">
-          <a
-            href="tel:+1234567890"
-            className="flex items-center gap-2 text-sm font-medium text-teal-100 hover:text-white transition-colors"
-          >
-            <Phone className="w-4 h-4" />
-            +91 9870189389
-          </a>
-          <Button asChild variant="secondary">
-            <Link to="/contact">Book Appointment</Link>
-          </Button>
-        </div>
-
-        {/* Mobile Menu Button */}
-        <button
-          type="button"
-          className="lg:hidden p-2"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          {mobileMenuOpen ? (
-            <X className="w-6 h-6 text-white" />
-          ) : (
-            <Menu className="w-6 h-6 text-white" />
-          )}
-        </button>
-      </nav>
-
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden bg-teal-600 border-t border-teal-500 animate-fade-in">
-          <div className="container-custom py-4 space-y-4">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className={cn(
-                  "block py-2 text-base font-medium transition-colors",
-                  location.pathname === item.href
-                    ? "text-white"
-                    : "text-teal-100 hover:text-white",
-                )}
-              >
-                {item.name}
-              </Link>
-            ))}
-
-            <Button asChild variant="secondary" className="w-full mt-4">
-              <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
-                Book Appointment
-              </Link>
-            </Button>
+          {/* CENTER - Green Rounded Nav */}
+          <div className="hidden lg:flex bg-[#77af58] px-12 py-4 rounded-full shadow-lg">
+            <div className="flex items-center gap-10">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className={cn(
+                    "text-lg font-medium transition-colors",
+                    location.pathname === item.href
+                      ? "text-white font-semibold"
+                      : "text-white/90 hover:text-white"
+                  )}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
           </div>
+
+          {/* RIGHT - White Contact Button */}
+          <div className="hidden lg:block">
+            <Link
+              to="/contact"
+              className="bg-white text-[#77af58] px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-100 transition"
+            >
+              Contact Us
+            </Link>
+          </div>
+
+          {/* Mobile Menu */}
+          <button
+            className="lg:hidden bg-[#77af58] text-white p-3 rounded-full"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
-      )}
-    </header>
+
+        {/* Mobile Dropdown */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden mt-4 bg-[#77af58] rounded-3xl shadow-lg px-6 py-6">
+            <div className="flex flex-col gap-5">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-white text-lg font-medium"
+                >
+                  {item.name}
+                </Link>
+              ))}
+              <Link
+                to="/contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="bg-white text-[#77af58] text-center py-3 rounded-full text-lg font-semibold"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        )}
+      </header>
+
+      {/* Spacer */}
+      <div className="h-32"></div>
+    </>
   );
 }
