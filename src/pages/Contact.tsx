@@ -90,7 +90,7 @@ const Contact = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section>S
 
       {/* Contact Info Cards */}
       <section className="py-12 bg-card border-b border-border">
