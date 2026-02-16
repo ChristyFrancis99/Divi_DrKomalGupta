@@ -41,7 +41,7 @@ export function HeroSection() {
             </h3>
 
             <p className="text-lg text-black max-w-md">
-              With over 7 years of experience, Dr. Komal R. Gupta is a trusted
+              With over 8 years of experience, Dr. Komal R. Gupta is a trusted
               orthopedic physiotherapist dedicated to helping patients regain
               mobility and improve their quality of life.
             </p>
