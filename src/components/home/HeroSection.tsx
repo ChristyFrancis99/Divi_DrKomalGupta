@@ -4,11 +4,10 @@ import heroImage from "@/assets/dr_komal_1.png";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden flex items-center justify-center bg-white">
-      
+    <section className="relative min-h-screen overflow-hidden flex items-center justify-center bg-white -translate-y-10">
       {/* Doctor Name – True Center */}
       <h1
-        className="absolute left-0 right-0 top-16 tracking-normal md:tracking-wide lg:tracking-wider text-6xl md:text-7xl lg:text-8xl font-bold text-[#77af58] text-center z-30 animate-fade-up opacity-0"
+        className="absolute left-0 right-0 top-16 tracking-normal md:tracking-wide lg:tracking-wider text-6xl md:text-7xl lg:text-8xl font-bold text-olive-600 text-center z-30 animate-fade-up opacity-0"
         style={{
           fontFamily: "Nunito, sans-serif",
           WebkitTextStroke: "1px white",
@@ -35,17 +34,20 @@ export function HeroSection() {
       {/* Content Layer */}
       <div className="relative z-10 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center min-h-screen pt-40 gap-10">
-          
           {/* LEFT CONTENT */}
           <div className="space-y-6 text-center lg:text-left text-black">
             <h3 className="text-2xl font-bold text-black">
-              Experienced orthopedic physiotherapist
+              Experienced Orthopedic Physiotherapist
             </h3>
 
             <p className="text-lg text-black max-w-md">
-              With over 7 years of experience, Dr. Komal R. Gupta is a trusted
-              orthopedic physiotherapist dedicated to helping patients regain
-              mobility and improve their quality of life.
+              With over 8 years of experience,
+              <br />
+              <span className="text-lime-700 font-semibold">
+                Dr. Komal R. Gupta
+              </span>{" "}
+              is a trusted orthopedic physiotherapist dedicated to helping
+              patients regain mobility and improve their quality of life.
             </p>
           </div>
 
@@ -62,7 +64,7 @@ export function HeroSection() {
             <Button
               asChild
               size="lg"
-              className="rounded-full px-8 bg-[#77af58] text-white hover:bg-[#6aa24d] transition"
+              className="rounded-full px-8 bg-olive-600 text-white hover:bg-olive-500 transition"
             >
               <Link to="/contact">Book an appointment</Link>
             </Button>

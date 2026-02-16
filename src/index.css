@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
 
 @layer base {
   :root {
@@ -16,7 +16,7 @@
     --popover-foreground: 200 25% 15%;
 
     /* 🔥 PRIMARY NOW OLIVE */
-    --primary: 90 50% 40%;          /* olive-500 */
+    --primary: 90 50% 40%; /* olive-500 */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 180 15% 95%;
@@ -49,11 +49,7 @@
     --sidebar-ring: 90 50% 40%;
 
     /* 🔥 HERO GRADIENT NOW OLIVE */
-    --hero-gradient: linear-gradient(
-      135deg,
-      hsl(90, 50%, 40%) 0%,
-      hsl(90, 50%, 32%) 100%
-    );
+    --hero-gradient: linear-gradient(135deg, #628141 0%, #628141 100%);
 
     --card-shadow: 0 4px 20px -4px hsl(200 25% 15% / 0.08);
     --card-shadow-hover: 0 12px 32px -8px hsl(200 25% 15% / 0.12);
@@ -114,10 +110,15 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-semibold tracking-tight;
   }
 }
@@ -177,8 +178,16 @@
     }
   }
 
-  .stagger-1 { animation-delay: 0.1s; }
-  .stagger-2 { animation-delay: 0.2s; }
-  .stagger-3 { animation-delay: 0.3s; }
-  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-1 {
+    animation-delay: 0.1s;
+  }
+  .stagger-2 {
+    animation-delay: 0.2s;
+  }
+  .stagger-3 {
+    animation-delay: 0.3s;
+  }
+  .stagger-4 {
+    animation-delay: 0.4s;
+  }
 }
