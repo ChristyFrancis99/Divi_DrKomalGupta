@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export function CTASection() {
   return (
-    <section className="section-padding bg-gradient-to-br from-primary via-primary to-teal-600 text-primary-foreground relative overflow-hidden">
+    <section className="section-padding bg-gradient-to-br from-primary via-primary to-olive-600 text-primary-foreground relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 right-0 w-96 h-96 bg-primary-foreground rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2" />

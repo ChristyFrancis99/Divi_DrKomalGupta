@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
 
 @layer base {
   :root {
@@ -15,7 +15,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 200 25% 15%;
 
-    --primary: 174 62% 40%;
+    /* 🔥 PRIMARY NOW OLIVE */
+    --primary: 90 50% 40%; /* olive-500 */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 180 15% 95%;
@@ -32,21 +33,24 @@
 
     --border: 180 15% 90%;
     --input: 180 15% 90%;
-    --ring: 174 62% 40%;
+
+    /* 🔥 RING NOW OLIVE */
+    --ring: 90 50% 40%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-primary: 90 50% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 90 40% 92%;
+    --sidebar-accent-foreground: 90 50% 25%;
+    --sidebar-border: 90 20% 85%;
+    --sidebar-ring: 90 50% 40%;
 
-    /* Custom healthcare tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(174, 62%, 40%) 0%, hsl(180, 50%, 35%) 100%);
+    /* 🔥 HERO GRADIENT NOW OLIVE */
+    --hero-gradient: linear-gradient(135deg, #628141 0%, #628141 100%);
+
     --card-shadow: 0 4px 20px -4px hsl(200 25% 15% / 0.08);
     --card-shadow-hover: 0 12px 32px -8px hsl(200 25% 15% / 0.12);
     --section-padding: 5rem;
@@ -62,7 +66,8 @@
     --popover: 200 20% 12%;
     --popover-foreground: 180 15% 95%;
 
-    --primary: 174 62% 50%;
+    /* 🔥 DARK MODE OLIVE */
+    --primary: 90 50% 45%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 200 20% 18%;
@@ -79,16 +84,18 @@
 
     --border: 200 20% 20%;
     --input: 200 20% 20%;
-    --ring: 174 62% 50%;
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    /* 🔥 DARK RING */
+    --ring: 90 50% 45%;
+
+    --sidebar-background: 90 15% 10%;
+    --sidebar-foreground: 90 20% 90%;
+    --sidebar-primary: 90 50% 45%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 90 20% 18%;
+    --sidebar-accent-foreground: 90 20% 90%;
+    --sidebar-border: 90 15% 20%;
+    --sidebar-ring: 90 50% 45%;
   }
 }
 
@@ -103,10 +110,15 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-semibold tracking-tight;
   }
 }
@@ -121,7 +133,7 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-primary to-teal-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary to-olive-700 bg-clip-text text-transparent;
   }
 
   .card-hover {
@@ -166,8 +178,16 @@
     }
   }
 
-  .stagger-1 { animation-delay: 0.1s; }
-  .stagger-2 { animation-delay: 0.2s; }
-  .stagger-3 { animation-delay: 0.3s; }
-  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-1 {
+    animation-delay: 0.1s;
+  }
+  .stagger-2 {
+    animation-delay: 0.2s;
+  }
+  .stagger-3 {
+    animation-delay: 0.3s;
+  }
+  .stagger-4 {
+    animation-delay: 0.4s;
+  }
 }

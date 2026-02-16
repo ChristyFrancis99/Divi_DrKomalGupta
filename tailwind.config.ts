@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -14,7 +19,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -60,17 +65,17 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        teal: {
-          50: "hsl(174, 62%, 95%)",
-          100: "hsl(174, 62%, 90%)",
-          200: "hsl(174, 62%, 80%)",
-          300: "hsl(174, 62%, 65%)",
-          400: "hsl(174, 62%, 50%)",
-          500: "hsl(174, 62%, 40%)",
-          600: "hsl(174, 62%, 32%)",
-          700: "hsl(174, 62%, 25%)",
-          800: "hsl(174, 62%, 18%)",
-          900: "hsl(174, 62%, 12%)",
+        olive: {
+          50: "hsl(90, 50%, 95%)",
+          100: "hsl(90, 50%, 90%)",
+          200: "hsl(90, 50%, 80%)",
+          300: "hsl(90, 50%, 65%)",
+          400: "hsl(90, 50%, 50%)",
+          500: "hsl(90, 50%, 40%)",
+          600: "hsl(90, 50%, 32%)",
+          700: "hsl(90, 50%, 25%)",
+          800: "hsl(90, 50%, 18%)",
+          900: "hsl(90, 50%, 12%)",
         },
       },
       borderRadius: {
