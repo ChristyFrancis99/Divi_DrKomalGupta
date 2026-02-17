@@ -4,12 +4,6 @@ import heroImage from "@/assets/dr_komal_1.png";
 
 export function HeroSection() {
   return (
-<<<<<<< HEAD
-    <section className="relative min-h-screen overflow-hidden flex items-center justify-center bg-white -translate-y-10">
-      {/* Doctor Name – True Center */}
-      <h1
-        className="absolute left-0 right-0 top-16 tracking-normal md:tracking-wide lg:tracking-wider text-6xl md:text-7xl lg:text-8xl font-bold text-olive-600 text-center z-30 animate-fade-up opacity-0"
-=======
     <section className="relative min-h-screen overflow-hidden flex items-center justify-center bg-gradient-to-b from-olive-50/60 via-white to-white">
 
 
@@ -27,7 +21,6 @@ export function HeroSection() {
 
       <h1
         className="absolute left-0 right-0 top-16 tracking-normal md:tracking-wide lg:tracking-wider text-6xl md:text-7xl lg:text-8xl font-bold text-olive-500 text-center z-30 animate-fade-up opacity-0"
->>>>>>> digi
         style={{
           fontFamily: "Nunito, sans-serif",
           WebkitTextStroke: "1px white",
@@ -56,22 +49,6 @@ export function HeroSection() {
 
       <div className="relative z-10 container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-3 items-center min-h-screen pt-40 gap-10">
-<<<<<<< HEAD
-          {/* LEFT CONTENT */}
-          <div className="space-y-6 text-center lg:text-left text-black">
-            <h3 className="text-2xl font-bold text-black">
-              Experienced Orthopedic Physiotherapist
-            </h3>
-
-            <p className="text-lg text-black max-w-md">
-              With over 8 years of experience,
-              <br />
-              <span className="text-lime-700 font-semibold">
-                Dr. Komal R. Gupta
-              </span>{" "}
-              is a trusted orthopedic physiotherapist dedicated to helping
-              patients regain mobility and improve their quality of life.
-=======
 
 
           <div className="space-y-6 text-center lg:text-left animate-fade-up opacity-0" style={{ animationDelay: "0.3s" }}>
@@ -83,7 +60,6 @@ export function HeroSection() {
               With over 7 years of experience, Dr. Komal R. Gupta is a trusted
               orthopedic physiotherapist dedicated to helping patients regain
               mobility and improve their quality of life.
->>>>>>> digi
             </p>
           </div>
 
@@ -100,11 +76,7 @@ export function HeroSection() {
             <Button
               asChild
               size="lg"
-<<<<<<< HEAD
-              className="rounded-full px-8 bg-olive-600 text-white hover:bg-olive-500 transition"
-=======
               className="rounded-full px-8 bg-olive-500 text-white hover:bg-olive-600 shadow-lg hover:shadow-glow-primary hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
->>>>>>> digi
             >
               <Link to="/contact">Book an appointment</Link>
             </Button>

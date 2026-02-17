@@ -15,13 +15,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 200 24% 16%;
 
-<<<<<<< HEAD
-    /* 🔥 PRIMARY NOW OLIVE */
-    --primary: 90 50% 40%; /* olive-500 */
-=======
     /* Primary: #6C883B → hsl(90, 41%, 38%) */
     --primary: 90 41% 38%;
->>>>>>> digi
     --primary-foreground: 0 0% 100%;
 
     --secondary: 90 15% 95%;
@@ -52,17 +47,12 @@
     --sidebar-border: 90 15% 86%;
     --sidebar-ring: 90 41% 38%;
 
-<<<<<<< HEAD
-    /* 🔥 HERO GRADIENT NOW OLIVE */
-    --hero-gradient: linear-gradient(135deg, #628141 0%, #628141 100%);
-=======
     /* Gradients */
     --hero-gradient: linear-gradient(
       135deg,
       hsl(90, 41%, 38%) 0%,
       hsl(90, 41%, 28%) 100%
     );
->>>>>>> digi
 
     /* Shadows */
     --card-shadow: 0 1px 3px hsl(200 24% 16% / 0.04), 0 4px 16px -2px hsl(200 24% 16% / 0.06);
@@ -254,20 +244,6 @@
     }
   }
 
-<<<<<<< HEAD
-  .stagger-1 {
-    animation-delay: 0.1s;
-  }
-  .stagger-2 {
-    animation-delay: 0.2s;
-  }
-  .stagger-3 {
-    animation-delay: 0.3s;
-  }
-  .stagger-4 {
-    animation-delay: 0.4s;
-  }
-=======
   @keyframes float {
     0%, 100% {
       transform: translateY(0);
@@ -329,5 +305,4 @@
   .stagger-6 { transition-delay: 0.3s; }
   .stagger-7 { transition-delay: 0.35s; }
   .stagger-8 { transition-delay: 0.4s; }
->>>>>>> digi
 }

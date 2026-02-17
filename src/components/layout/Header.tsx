@@ -41,20 +41,6 @@ export function Header() {
       >
         <div className="flex items-center justify-between">
 
-<<<<<<< HEAD
-          {/* LEFT - Logo */}
-          <Link to="/">
-            <img
-              src={logo}
-              alt="Dr Komal Logo"
-              className="w-40 md:w-48 h-auto"
-            />
-          </Link>
-
-          {/* CENTER - Green Rounded Nav */}
-          <div className="hidden lg:flex bg-olive-600 px-12 py-4 rounded-full shadow-lg">
-            <div className="flex items-center gap-10">
-=======
 
           <Link to="/" className="group flex-shrink-0">
             <img
@@ -74,7 +60,6 @@ export function Header() {
             )}
           >
             <div className="flex items-center gap-8">
->>>>>>> digi
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -105,13 +90,6 @@ export function Header() {
             </div>
           </div>
 
-<<<<<<< HEAD
-          {/* RIGHT - Contact Button */}
-          <div className="hidden lg:block">
-            <Link
-              to="/contact"
-              className="bg-white text-olive-500 px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-100 transition"
-=======
 
           <div className="hidden lg:block">
             <Link
@@ -122,21 +100,14 @@ export function Header() {
                   ? "bg-olive-500 text-white hover:bg-olive-600"
                   : "bg-white text-olive-600 hover:bg-olive-50"
               )}
->>>>>>> digi
             >
               Contact Us
             </Link>
           </div>
 
-<<<<<<< HEAD
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden bg-olive-500 text-white p-3 rounded-full"
-=======
 
           <button
             className="lg:hidden bg-olive-500 text-white p-3 rounded-full shadow-md hover:bg-olive-600 transition-all duration-200 active:scale-95"
->>>>>>> digi
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -159,12 +130,6 @@ export function Header() {
           </button>
         </div>
 
-<<<<<<< HEAD
-        {/* Mobile Dropdown */}
-        {mobileMenuOpen && (
-          <div className="lg:hidden mt-4 bg-olive-500 rounded-3xl shadow-lg px-6 py-6">
-            <div className="flex flex-col gap-5">
-=======
 
         <div
           className={cn(
@@ -176,7 +141,6 @@ export function Header() {
         >
           <div className="bg-white/95 backdrop-blur-xl rounded-2xl shadow-elevated border border-olive-100/60 px-6 py-5">
             <div className="flex flex-col gap-1">
->>>>>>> digi
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -192,16 +156,6 @@ export function Header() {
                   {item.name}
                 </Link>
               ))}
-<<<<<<< HEAD
-
-              <Link
-                to="/contact"
-                onClick={() => setMobileMenuOpen(false)}
-                className="bg-white text-olive-500 text-center py-3 rounded-full text-lg font-semibold"
-              >
-                Contact Us
-              </Link>
-=======
               <div className="mt-2 pt-3 border-t border-olive-100">
                 <Link
                   to="/contact"
@@ -211,7 +165,6 @@ export function Header() {
                   Contact Us
                 </Link>
               </div>
->>>>>>> digi
             </div>
           </div>
         </div>
