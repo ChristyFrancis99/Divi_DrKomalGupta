@@ -39,10 +39,7 @@ export function Footer() {
 
           <div className="space-y-6 scroll-reveal">
             <Link to="/" className="flex items-center gap-2.5 group">
-              <div className="w-10 h-10 rounded-xl bg-olive-500 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
-                <span className="text-white font-bold text-lg">H+</span>
-              </div>
-              <span className="text-xl font-bold tracking-tight">HealthCare</span>
+              <span className="text-xl font-bold tracking-tight">Dr Komal's Physiocare</span>
             </Link>
             <p className="text-primary-foreground/60 text-sm leading-relaxed max-w-xs">
               Providing compassionate, comprehensive healthcare for you and your family. Your health is our priority.
@@ -60,7 +57,6 @@ export function Footer() {
               ))}
             </div>
           </div>
-
 
           <div className="scroll-reveal stagger-2">
             <h4 className="text-base font-semibold mb-6 flex items-center gap-2">
@@ -102,7 +98,6 @@ export function Footer() {
               ))}
             </ul>
           </div>
-
 
           <div className="scroll-reveal stagger-4">
             <h4 className="text-base font-semibold mb-6 flex items-center gap-2">
@@ -147,7 +142,6 @@ export function Footer() {
             </ul>
           </div>
         </div>
-
 
         <div className="mt-14 pt-8 border-t border-primary-foreground/8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/40 text-sm">

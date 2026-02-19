@@ -83,7 +83,7 @@ const About = () => {
             <div className="relative scroll-reveal-right">
               <div className="rounded-2xl overflow-hidden shadow-elevated group">
                 <img
-                  src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&h=500&fit=crop"
+                  src="src/assets/about_drkomal.png"
                   alt="Medical team"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
