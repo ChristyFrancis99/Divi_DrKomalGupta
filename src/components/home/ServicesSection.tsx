@@ -1,48 +1,48 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Stethoscope } from "lucide-react";
+import { Bandage, Syringe, CircleDot, Brain, Baby, Hand, Bone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const services = [
   {
-    icon: Stethoscope,
+    icon: Bandage,
     title: "Kinesiology Taping",
     description:
       "Elastic therapeutic taping that supports muscles and joints while improving circulation and reducing pain without limiting movement.",
   },
   {
-    icon: Stethoscope,
+    icon: Syringe,
     title: "Dry Needling",
     description:
       "A targeted technique using fine needles to release muscle knots, relieve pain, and restore optimal muscle function.",
   },
   {
-    icon: Stethoscope,
+    icon: CircleDot,
     title: "Cupping Therapy",
     description:
       "A suction-based therapy that enhances blood flow, reduces muscle tension, and accelerates natural healing.",
   },
   {
-    icon: Stethoscope,
+    icon: Hand,
     title: "Manual Therapy",
     description:
       "Hands-on treatment techniques designed to reduce pain, restore joint mobility, and improve overall movement.",
   },
   {
-    icon: Stethoscope,
+    icon: Bone,
     title: "Chiropractic Care",
     description:
       "Precise spinal adjustments that correct alignment, relieve nerve pressure, and improve musculoskeletal function.",
   },
   {
-    icon: Stethoscope,
+    icon: Brain,
     title: "Neuro Physiotherapy",
     description:
       "Specialized rehabilitation focused on improving movement, balance, and independence in neurological conditions.",
   },
   {
-    icon: Stethoscope,
+    icon: Baby,
     title: "Pediatric Physiotherapy",
     description:
       "Child-focused therapy that supports healthy development, strength, posture, and motor skill improvement.",
@@ -55,14 +55,14 @@ export function ServicesSection() {
   return (
     <section
       ref={revealRef}
-      className="section-padding bg-olive-50/30 relative overflow-hidden"
+      className="section-padding bg-olive-50/30 relative"
     >
+      {/* Top Divider */}
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-olive-200/50 to-transparent" />
 
       <div className="container-custom">
-
-        {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 scroll-reveal">
+        {/* Heading */}
+        <div className="text-center max-w-2xl mx-auto mb-14 scroll-reveal">
           <p className="text-olive-500 font-semibold mb-3 text-sm tracking-wider uppercase">
             Our Services
           </p>
@@ -72,71 +72,50 @@ export function ServicesSection() {
           <div className="w-16 h-1 bg-olive-400 rounded-full mx-auto mt-4" />
         </div>
 
-        {/* 🔷 Honeycomb Layout (Desktop Only) */}
-<div className="hidden lg:flex justify-center">
-  <div className="max-w-6xl w-full px-6">
+        {/* Infinite Carousel */}
+        <div className="relative overflow-hidden mask-fade">
+          {/* Left Fade */}
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-olive-50/30 to-transparent z-10" />
 
-    <div className="grid grid-cols-3 gap-x-10 gap-y-[-60px] justify-items-center">
+          {/* Right Fade */}
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-olive-50/30 to-transparent z-10" />
 
-      {services.map((service, index) => (
-        <div
-          key={service.title}
-          className={cn(
-            "relative w-72 h-80 bg-white shadow-card border border-olive-100/60",
-            "flex flex-col justify-center items-center text-center px-6",
-            "transition-all duration-300 hover:-translate-y-3 hover:shadow-card-hover",
-            index % 2 !== 0 ? "mt-20" : ""
-          )}
-          style={{
-            clipPath:
-              "polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)",
-          }}
-        >
-          <div className="w-14 h-14 rounded-full bg-olive-100 flex items-center justify-center mb-4">
-            <service.icon className="w-6 h-6 text-olive-500" />
-          </div>
+          <div className="flex gap-6 w-max animate-scroll">
+            {[...services, ...services].map((service, index) => (
+              <div
+                key={`${service.title}-${index}`}
+                className="group bg-white rounded-2xl p-7 shadow-card border border-olive-100/50 min-w-[320px] max-w-[320px] hover:shadow-card-hover hover:-translate-y-1.5 transition-all duration-300 ease-out"
+              >
+                <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-5 bg-olive-100/80 group-hover:bg-olive-500 transition-all duration-300">
+                  <service.icon className="w-7 h-7 text-olive-500 group-hover:text-white transition-colors duration-300" />
+                </div>
 
-          <h3 className="font-semibold text-foreground mb-2 text-base">
-            {service.title}
-          </h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2.5">
+                  {service.title}
+                </h3>
 
-          <p className="text-sm text-muted-foreground leading-relaxed">
-            {service.description}
-          </p>
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
+                <p className="text-muted-foreground mb-5 leading-relaxed text-[15px]">
+                  {service.description}
+                </p>
 
-        {/* 🔷 Mobile / Tablet Fallback Grid */}
-        <div className="grid md:grid-cols-2 gap-6 lg:hidden">
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className="bg-white rounded-2xl p-7 shadow-card border border-olive-100/50 hover:shadow-card-hover transition-all duration-300"
-            >
-              <div className="w-12 h-12 rounded-lg bg-olive-100 flex items-center justify-center mb-4">
-                <service.icon className="w-6 h-6 text-olive-500" />
+                <Link
+                  to="/services"
+                  className="inline-flex items-center gap-1.5 text-olive-500 font-medium text-sm hover:gap-3 transition-all duration-300"
+                >
+                  Learn More
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
               </div>
-
-              <h3 className="text-lg font-semibold text-foreground mb-2">
-                {service.title}
-              </h3>
-
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {service.description}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        {/* CTA Button */}
-        <div className="text-center mt-20 scroll-reveal">
+        {/* Button */}
+        <div className="text-center mt-14 scroll-reveal">
           <Button
             asChild
             size="lg"
-            className="rounded-full px-8 shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+            className="rounded-full px-8 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
           >
             <Link to="/services">
               View All Services

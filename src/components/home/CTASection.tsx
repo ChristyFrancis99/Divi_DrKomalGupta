@@ -25,12 +25,6 @@ export function CTASection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center scroll-reveal stagger-3">
-            <Button asChild variant="hero" size="xl" className="rounded-full shadow-lg hover:shadow-xl">
-              <Link to="/contact">
-                Book Appointment
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </Button>
             <Button asChild variant="hero-outline" size="xl" className="rounded-full">
               <a href="tel:+919870189389">
                 <Phone className="w-5 h-5" />
@@ -40,7 +34,7 @@ export function CTASection() {
           </div>
 
           <p className="mt-10 text-primary-foreground/50 text-sm scroll-reveal stagger-4">
-            Or call us at <a href="tel:+919870189389" className="underline hover:text-primary-foreground transition-colors duration-200">+91 98701 89389</a> • Morning: 10 AM-12 PM | Evening: 4 PM-9 PM
+            Or call us at <a href="tel:+919870189389" className="underline hover:text-primary-foreground transition-colors duration-200">+91 98701 89389</a> • Morning: 10 AM - 12 PM | Evening: 4 PM - 9 PM
           </p>
         </div>
       </div>
