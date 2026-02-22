@@ -27,7 +27,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Hours",
-    content: "Morning: 10 AM-12 PM and Evening: 4 PM-9 PM",
+    content: "Morning: 10 AM - 12 PM\nEvening: 4 PM - 9 PM",
     subtext: "Sunday: Closed",
     href: "#",
   },
@@ -38,7 +38,6 @@ const Contact = () => {
 
   return (
     <Layout>
-
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-olive-500 via-olive-600 to-olive-700 text-primary-foreground section-padding relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
@@ -83,7 +82,7 @@ const Contact = () => {
                   "hover:bg-olive-50/50 hover:border-olive-200/50 hover:-translate-y-1 hover:shadow-medium",
                   "transition-all duration-300 ease-out",
                   "scroll-reveal",
-                  `stagger-${index + 1}`
+                  `stagger-${index + 1}`,
                 )}
               >
                 <div className="w-12 h-12 rounded-xl bg-olive-100 flex items-center justify-center mx-auto mb-4 group-hover:bg-olive-500 group-hover:scale-110 transition-all duration-300">
@@ -124,7 +123,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
     </Layout>
   );
 };

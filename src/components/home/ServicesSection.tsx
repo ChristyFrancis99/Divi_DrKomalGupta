@@ -36,16 +36,16 @@ const services = [
       "Precise spinal adjustments that correct alignment, relieve nerve pressure, and improve musculoskeletal function.",
   },
   {
+    icon: Baby,
+    title: "Pediatric Physiotherapy",
+    description:
+    "Child-focused therapy that supports healthy development, strength, posture, and motor skill improvement.",
+  },
+  {
     icon: Brain,
     title: "Neuro Physiotherapy",
     description:
       "Specialized rehabilitation focused on improving movement, balance, and independence in neurological conditions.",
-  },
-  {
-    icon: Baby,
-    title: "Pediatric Physiotherapy",
-    description:
-      "Child-focused therapy that supports healthy development, strength, posture, and motor skill improvement.",
   },
 ];
 

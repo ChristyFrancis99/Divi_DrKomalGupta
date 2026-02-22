@@ -1,16 +1,13 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import {
-  Stethoscope, Brain, Baby, Heart, Bone,
-  CheckCircle, ArrowRight
-} from "lucide-react";
+import { Bandage, Syringe, CircleDot, Brain, Baby, Hand, Bone, ArrowRight, CheckCircle} from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const services = [
   {
-    icon: Stethoscope,
+    icon: Bandage,
     title: "Kinesiology Tapping",
     description: "Kinesiology Taping involves applying specialized elastic tape to support joints and muscles without restricting your natural movement.We tackle pain and instability by using specific tension techniques that improve blood flow, reduce swelling, and provide structural support.This approach is ideal for managing sports injuries and correcting posture while allowing you to remain active during recovery.",
     features: ["Muscle & Joint Support", "Pain & Inflammation Reduction", "Sports Injury Management", "Postural Correction","Swelling & Edema Control","Injury Prevention Support"],
@@ -19,7 +16,7 @@ const services = [
     accentColor: "border-l-olive-500",
   },
   {
-    icon: Heart,
+    icon: Syringe,
     title: "Dry Needling",
     description: "Dry Needling is a therapeutic technique that uses thin, sterile needles inserted into trigger points (tight muscle knots) to relieve pain and improve movement. It helps release muscle tension, reduce inflammation, and restore proper muscle function. This treatment is highly effective for chronic pain, sports injuries, and muscular stiffness, promoting faster recovery and improved mobility without the use of medication.",
     features: ["Trigger Point Therapy", "Chronic Pain Relief", "Sports Injury Recovery", "Muscle Tightness & Spasm Treatment","Improved Range of Motion"],
@@ -28,7 +25,7 @@ const services = [
     accentColor: "border-l-rose-400",
   },
   {
-    icon: Brain,
+    icon: CircleDot,
     title: "Cupping",
     description: "Cupping Therapy is a traditional healing technique that uses special cups placed on the skin to create suction. This suction improves blood circulation, reduces muscle tension, and promotes natural healing. It helps relieve pain, decrease inflammation, and detoxify the body. Cupping is commonly used for back pain, neck stiffness, and muscle soreness while supporting overall recovery.",
     features: ["Pain & Inflammation Reduction", "Muscle Relaxation", "Improved Blood Circulation", "Sports Recovery Support","Stress & Tension Relief"],
@@ -37,7 +34,7 @@ const services = [
     accentColor: "border-l-violet-400",
   },
   {
-    icon: Baby,
+    icon: Hand,
     title: "Manual Therapy",
     description: "Manual Therapy is a hands-on treatment approach where skilled techniques are used to mobilize joints, stretch soft tissues, and reduce pain. It helps restore normal movement, improve flexibility, and enhance muscle function. This therapy is beneficial for joint stiffness, postural issues, and musculoskeletal conditions, allowing patients to regain strength and mobility safely.",
     features: ["Joint Mobilization", "Soft Tissue Release", "Posture Correction", "Pain Management","Mobility & Flexibility Improvement"],
@@ -55,7 +52,7 @@ const services = [
     accentColor: "border-l-amber-400",
   },
   {
-    icon: Bone,
+    icon: Baby,
     title: "Pediatric physiotherapy",
     description: "Pediatric Physiotherapy is designed to support infants, children, and adolescents who experience developmental delays, movement difficulties, or physical challenges. Through gentle and child-friendly techniques, therapy helps improve strength, coordination, posture, and motor skills. The goal is to promote healthy physical development and enable children to participate confidently in daily activities.",
     features: ["Developmental Delay Management", "Posture & Alignment Correction", "Cerebral Palsy Rehabilitation", "Pediatric Sports Injury Care","Strength & Motor Skill Development","Parent Guidance & Home Exercise Programs"],
@@ -64,7 +61,7 @@ const services = [
     accentColor: "border-l-teal-400",
   },
   {
-    icon: Bone,
+    icon: Brain,
     title: "Neuro physiotherapy",
     description: "Neuro Physiotherapy focuses on the rehabilitation of individuals with neurological conditions that affect movement, balance, coordination, and muscle control. It uses specialized therapeutic techniques to improve mobility, restore functional independence, and enhance quality of life. This treatment is beneficial for conditions such as stroke, spinal cord injuries, Parkinson's disease, multiple sclerosis, and other nerve-related disorders.",
     features: ["Stroke Rehabilitation", "Balance & Coordination Training", "Gait (Walking) Re-education", "Muscle Strengthening & Control","Post-Surgical Neuro Recovery","Functional Independence Training"],
