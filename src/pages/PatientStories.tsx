@@ -30,9 +30,48 @@ const PatientStories = () => {
         </div>
       </section>
 
-      {/*Video Grid*/}
-      
-      
+      {/* Patient Video Stories Grid */}
+      <section className="py-24 md:py-32 bg-gradient-to-b from-white to-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-20 scroll-reveal">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+              Patient Success Stories
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Watch real patient testimonials showcasing life-changing results
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 md:gap-8 lg:gap-10">
+            {Array.from({ length: 17 }, (_, i) => {
+              const videoSrc = new URL(`../assets/${i + 1}.mp4`, import.meta.url).href;
+              return (
+                <div
+                  key={i + 1}
+                  className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-[1.03] bg-white"
+                >
+                  <video
+                    src={videoSrc}
+                    className="w-full h-64 md:h-72 lg:h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+                    muted
+                    autoPlay
+                    loop
+                    playsInline
+                    controls
+                    preload="metadata"
+                  />
+                  <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-all duration-500 flex items-center justify-center opacity-0 group-hover:opacity-100 pointer-events-none">
+                    <svg className="w-20 h-20 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section ref={ctaRef} className="section-padding bg-white relative">
         <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-olive-200/50 to-transparent" />
@@ -59,3 +98,4 @@ const PatientStories = () => {
 };
 
 export default PatientStories;
+

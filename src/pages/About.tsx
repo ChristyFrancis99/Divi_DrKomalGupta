@@ -32,7 +32,7 @@ const About = () => {
               Dedicated to Your Health Since 2010
             </h1>
             <p className="text-xl text-primary-foreground/75 leading-relaxed">
-              HealthCare Medical Center has been providing exceptional healthcare services to our community for over 15 years, combining cutting-edge medicine with compassionate care.
+              Our Center has been providing exceptional healthcare services to our community for over 15 years, combining cutting-edge medicine with compassionate care.
             </p>
           </div>
         </div>
@@ -71,7 +71,7 @@ const About = () => {
                 Transforming Healthcare Through Innovation and Compassion
               </h2>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                At HealthCare Medical Center, we believe that quality healthcare should be accessible, personalized, and delivered with genuine care. Our mission is to enhance the health and well-being of every patient we serve.
+                At Dr Komal Physiocare, we believe that quality healthcare should be accessible, personalized, and delivered with genuine care. Our mission is to enhance the health and well-being of every patient we serve.
               </p>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
                 We combine state-of-the-art medical technology with a human touch, ensuring that every patient receives the attention and care they deserve. Our team of dedicated professionals works together to provide comprehensive healthcare solutions tailored to your unique needs.

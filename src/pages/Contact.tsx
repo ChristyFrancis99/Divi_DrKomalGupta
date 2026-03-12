@@ -123,6 +123,23 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      <section className="py-16 bg-olive-50/20">
+        <div className="container-custom">
+          <div className="rounded-2xl overflow-hidden h-96 shadow-card border border-olive-100/50">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.312270042605!2d72.8376575!3d19.2036382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b777f40523db%3A0x4544ddebd52b3fb8!2sDr.%20Komal's%20PHYSIOCARE!5e0!3m2!1sen!2sin!4v1700000000000"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Clinic Location"
+            />
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
