@@ -6,7 +6,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { cn } from "@/lib/utils";
 
 const stats = [
-  { label: "Years of Experience", value: "15+", icon: Clock },
+  { label: "Years of Experience", value: "8+", icon: Clock },
   { label: "Patients Treated", value: "50,000+", icon: Users },
   { label: "Medical Professionals", value: "25+", icon: Award },
   { label: "Patient Satisfaction", value: "98%", icon: Heart },
@@ -29,10 +29,10 @@ const About = () => {
           <div className="max-w-3xl animate-fade-up opacity-0">
             <p className="text-primary-foreground/70 font-medium mb-4 text-sm tracking-wider uppercase">About Us</p>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Dedicated to Your Health Since 2010
+              Dedicated to Your Health Since 2024
             </h1>
             <p className="text-xl text-primary-foreground/75 leading-relaxed">
-              Our Center has been providing exceptional healthcare services to our community for over 15 years, combining cutting-edge medicine with compassionate care.
+              Our Proffesionals has been providing exceptional healthcare services to our community for over 8 years, combining cutting-edge medicine with compassionate care.
             </p>
           </div>
         </div>

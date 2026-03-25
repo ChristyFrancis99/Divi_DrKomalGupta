@@ -13,8 +13,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    content: "info@healthcare.com",
-    href: "mailto:info@healthcare.com",
+    content: "komal6111995@gmail.com",
+    href: "mailto:komal6111995@gmail.com",
   },
   {
     icon: MapPin,
@@ -128,7 +128,7 @@ const Contact = () => {
         <div className="container-custom">
           <div className="rounded-2xl overflow-hidden h-96 shadow-card border border-olive-100/50">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.312270042605!2d72.8376575!3d19.2036382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b777f40523db%3A0x4544ddebd52b3fb8!2sDr.%20Komal's%20PHYSIOCARE!5e0!3m2!1sen!2sin!4v1700000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.331052832339!2d72.8314777!3d19.1369808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7b1aadc16dd%3A0xe88d5dda0b7bab5d!2sDivi%20Orthopaedic%20%26%20Rehab%20Center!5e0!3m2!1sen!2sin!4v1773328873657!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
