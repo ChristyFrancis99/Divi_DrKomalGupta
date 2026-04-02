@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import PatientStories from "./pages/PatientStories";
 import Contact from "./pages/Contact";
+import Testimonials from "./pages/Testimonials";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/patient-stories" element={<PatientStories />} />
+          <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
@@ -42,3 +44,4 @@ const App = () => (
 );
 
 export default App;
+

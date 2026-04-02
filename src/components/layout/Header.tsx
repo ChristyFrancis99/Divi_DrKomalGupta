@@ -9,6 +9,7 @@ const navigation = [
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
   { name: "Patient Stories", href: "/patient-stories" },
+  { name: "Testimonials", href: "/testimonials" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -25,14 +26,12 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [location.pathname]);
 
   return (
     <>
-
       <header
         className={cn(
           "fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-7xl transition-all duration-500 ease-out",
@@ -40,8 +39,6 @@ export function Header() {
         )}
       >
         <div className="flex items-center justify-between">
-
-
           <Link to="/" className="group flex-shrink-0">
             <img
               src={logo}
@@ -49,7 +46,6 @@ export function Header() {
               className="w-40 md:w-48 h-auto transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
-
 
           <div
             className={cn(
@@ -76,7 +72,6 @@ export function Header() {
                   )}
                 >
                   {item.name}
-
                   {location.pathname === item.href && (
                     <span
                       className={cn(
@@ -89,7 +84,6 @@ export function Header() {
               ))}
             </div>
           </div>
-
 
           <div className="hidden lg:block">
             <Link
@@ -104,7 +98,6 @@ export function Header() {
               Contact Us
             </Link>
           </div>
-
 
           <button
             className="lg:hidden bg-olive-500 text-white p-3 rounded-full shadow-md hover:bg-olive-600 transition-all duration-200 active:scale-95"
@@ -129,7 +122,6 @@ export function Header() {
             </div>
           </button>
         </div>
-
 
         <div
           className={cn(
@@ -170,8 +162,8 @@ export function Header() {
         </div>
       </header>
 
-
       <div className="h-28" />
     </>
   );
 }
+
