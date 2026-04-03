@@ -127,7 +127,7 @@ export function Header() {
           className={cn(
             "lg:hidden overflow-hidden transition-all duration-400 ease-out",
             mobileMenuOpen
-              ? "mt-3 max-h-96 opacity-100"
+              ? "mt-3 max-h-[32rem] opacity-100"
               : "mt-0 max-h-0 opacity-0"
           )}
         >
