@@ -7,39 +7,53 @@ import { cn } from "@/lib/utils";
 
 const testimonials = [
   {
-    quote: "Dr. Komal's treatment completely transformed my mobility. After years of chronic back pain, I can now live pain-free!",
-    author: "Priya Sharma",
-    role: "Office Worker",
+    quote: "We had a wonderful experience with my son's physiotherapist Dr.Komal Gupta! They are extremely patient, caring, and knowledgeable. The sessions are always fun and engaging, which keeps my child motivated to do the exercises. We've seen great improvement and are truly thankful for the personal attention and gentle approach. Highly recommended for physiotherapy for kids as well as adults!",
+    author: "Veer Gala",
     rating: 5,
   },
   {
-    quote: "Exceptional care and personalized attention. My knee recovery was faster than expected. Highly recommended!",
-    author: "Rahul Patel",
-    role: "Athlete",
+    quote: "Dr Komal is experienced & knows well how to treat the patients through physiotherapy. She's very caring & would go beyond her capacity to help her patients. She suggests the right amount of exercise needed to heal the pain & is highly focused to get her patients out of their pain. I'd highly recommend to visit her for your physiotherapy related ailments.",
+    author: "Tarun Kataria",
     rating: 5,
   },
   {
-    quote: "The best physiotherapy experience. Professional, caring, and effective. My shoulder pain is gone!",
-    author: "Neha Gupta",
-    role: "Teacher",
+    quote: "I am taking her treatment from past few days and Komal is simply an amazing person with exceptional experience in her work. She is always smiling and much caring person and that's all we need when you are going with any kind of treatment. When doctor welcomes you with a big smile, patient always feels yes I will be fine for sure. I will highly recommend everyone to visit her if you need any type of physiotherapy treatment.",
+    author: "Ratna Desai",
     rating: 5,
   },
   {
-    quote: "From constant neck pain to full flexibility. Dr. Komal's expertise made all the difference.",
-    author: "Amit Singh",
-    role: "Engineer",
+    quote: "An excellent experience with Dr. Komal as my physiotherapist. She is highly knowledgeable, patient, and truly cares about her patients' recovery. Her treatment approach is both effective and personalized, ensuring noticeable improvement in a short time. The clinic is well-maintained, and the sessions are always comfortable. I highly recommend Dr. Komal to anyone seeking expert physiotherapy care!",
+    author: "Manan Desai",
     rating: 5,
   },
   {
-    quote: "Post-surgery rehabilitation was smooth thanks to the customized plan. Grateful for the results!",
-    author: "Sunita Desai",
-    role: "Homemaker",
+    quote: "I sought physiotherapy for my wrist fracture and my experience with Dr. Komal has been excellent. She has demonstrated deep expertise in this field and her personalized approach has made a significant difference in my recovery. Dr. Komal has always been professional, communicative and supportive throughout the process. I would highly recommend her to anybody who's looking for expert Physiotherapy treatment",
+    author: "Riddhi Hindocha",
     rating: 5,
   },
   {
-    quote: "Advanced techniques and genuine care. My sports injury recovery exceeded expectations.",
-    author: "Vikram Kumar",
-    role: "Cricketer",
+    quote: "I was suffering from severe back pain, and after visiting Dr. Komal, my physiotherapist, I experienced a remarkable improvement. She is extremely knowledgeable, caring, and patient. Her treatment and exercises helped me heal completely. I'm really thankful for her excellent care and highly recommend her to anyone in need of physiotherapy!",
+    author: "Harsh Panchal",
+    rating: 5,
+  },
+  {
+    quote: "I visited Physiocare for SI joint pain, and Dr. Komal's expertise, friendly attitude, and personalized approach made a significant difference in my recovery. She properly understood my condition and designed a treatment plan that provided noticeable relief. Her warm and approachable nature immediately put me at ease, and her consistent follow-ups ensured steady progress and long-term results. The clinic is well-maintained with modern facilities, creating a comfortable and professional environment. I highly recommend Physiocare for anyone seeking effective and compassionate physiotherapy care!",
+    author: "luve mashru",
+    rating: 5,
+  },
+  {
+    quote: "I was diagnosed with Bell's Palsy and started treatment with Dr. Komal. Within just a few days, I noticed improvement, and in a month, I was completely cured. Her treatment and guidance were truly effective. She is very kind, knowledgeable, and always made sure I was comfortable during the sessions. I'm really thankful for her support and care throughout my recovery. Highly recommended to anyone who needs a dedicated and skilled physiotherapist. Thank you so much, Dr. Komal!",
+    author: "Sejal Bomble",
+    rating: 5,
+  },
+  {
+    quote: "I would like to extend my heartfelt gratitude to Dr. Komal Gupta for her exceptional care and expertise during my post-operative recovery from calcaneum surgery. From the very first session, her personalized approach and deep understanding of physiotherapy gave me immense confidence in my recovery journey. Dr. Komal ensured every therapy session was tailored to my specific needs, helping me regain mobility and strength at a pace that was both challenging and comfortable. Her patience, encouragement, and attention to detail made a significant difference in my rehabilitation process. Thanks to her dedication and consistent support, I have made remarkable progress and am on my way to a full recovery. I wholeheartedly recommend Dr. Komal Gupta to anyone in need of a skilled and compassionate physiotherapist. Thank you, Dr. Komal, for your outstanding care and guidance!",
+    author: "Chirag Jain",
+    rating: 5,
+  },
+  {
+    quote: "I have been visiting the clinic for the past 3 months and have had a very good experience with Dr. Komal Gupta and her team, including Dr. Khushali and Aakash. I took treatment for flat foot and neck pain, and the results have been very satisfying. Dr. Komal Gupta is knowledgeable and patient, and explains the treatment clearly. The sessions were well planned and handled with great care. Dr. Khushali and Aakash were very supportive and attentive throughout. The clinic environment is friendly, hygienic, and comfortable, and I've noticed good improvement in my pain and mobility. I would highly recommend Dr. Komal Gupta and her team for physiotherapy.",
+    author: "jill Poojara",
     rating: 5,
   },
 ];
