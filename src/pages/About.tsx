@@ -3,6 +3,7 @@ import { Award, Users, Heart, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import aboutImage from "@/assets/about_drkomal.png";
 import { cn } from "@/lib/utils";
 
 const stats = [
