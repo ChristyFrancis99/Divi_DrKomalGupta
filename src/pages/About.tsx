@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 const stats = [
   { label: "Years of Experience", value: "8+", icon: Clock },
-  { label: "Patients Treated", value: "50,000+", icon: Users },
+  { label: "Patients Treated", value: "5,000+", icon: Users },
   { label: "Medical Professionals", value: "25+", icon: Award },
   { label: "Patient Satisfaction", value: "98%", icon: Heart },
 ];
