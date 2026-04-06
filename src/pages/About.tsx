@@ -81,18 +81,31 @@ const About = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 leading-tight">
                 Transforming Healthcare Through Innovation and Compassion
               </h2>
+
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                At Dr Komal Physiocare, we believe that quality healthcare
-                should be accessible, personalized, and delivered with genuine
-                care. Our mission is to enhance the health and well-being of
-                every patient we serve.
+                Dr. Gupta has extensive expertise in guiding patients through recovery following joint replacements, trauma surgeries, and complex orthopedic conditions. Alongside her work with adults, she is also highly skilled in pediatric physiotherapy, treating children with cerebral palsy, congenital talipes equinovarus (CTEV), sensory integration dysfunction, and other congenital conditions with specialized and compassionate care.
               </p>
-              <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                We combine state-of-the-art medical technology with a human
-                touch, ensuring that every patient receives the attention and
-                care they deserve. Our team of dedicated professionals works
-                together to provide comprehensive healthcare solutions tailored
-                to your unique needs.
+
+              <div className="text-muted-foreground text-lg mb-6 leading-relaxed">
+                <p className="mb-2">
+                  She also holds advanced certifications in:
+                </p>
+                <ul className="list-disc pl-5">
+                  <li>Orthopedic Rehabilitation</li>
+                  <li>Manual Therapy (MTFI, Mumbai)</li>
+                  <li>Kinesiology Taping (Mumbai)</li>
+                  <li>Dry Needling (Mumbai)</li>
+                  <li>Pre & Post-Natal Exercises (IAFT, Mangalore)</li>
+                  <li>Pilates & Power Yoga (IAFT, Mangalore)</li>
+                </ul>
+              </div>
+
+              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
+                As a proud member of the Indian Association of Physiotherapists (IAP), Dr. Gupta upholds the highest standards of physiotherapy practice. She has a keen interest in research and continuous learning, regularly participating in health and academic conferences to stay updated with the latest clinical guidelines.
+              </p>
+
+              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
+                At Dr. Komal Gupta, our vision is simple yet powerful: to help every patient move better, recover stronger, and live pain-free.
               </p>
               <Button
                 asChild
@@ -104,7 +117,11 @@ const About = () => {
             </div>
             <div className="relative scroll-reveal-right">
               <div className="rounded-2xl overflow-hidden shadow-elevated group">
-                <img src={aboutImage} alt="Medical team" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <img
+                  src={aboutImage}
+                  alt="Medical team"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
 
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-olive-200/30 rounded-2xl -z-10" />
